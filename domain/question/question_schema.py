@@ -25,3 +25,9 @@ class QuestionCreate(BaseModel):
             #검사에 실패하면 오류 발생
             raise ValueError('빈 값은 허용되지 않습니다 .')
         return v
+
+class QuestionList(BaseModel):
+    total: int = 0
+    # 변수명: 자료형 = 기본값
+    question_list: list[Question] = []
+
