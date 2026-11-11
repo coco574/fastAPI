@@ -1,0 +1,23 @@
+{
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.editor.empty.hint": "hidden",
+  "svelte.ask-to-enable-ts-plugin": false,
+  "git.openRepositoryInParentFolders": "never",
+  "terminal.integrated.confirmOnKill": "panel",
+
+  "background.enabled": true,
+  "background.editor": {
+    "useFront": false,
+    "style": {
+      "background-position": "center",
+      "background-size": "cover",
+      "opacity": 0.25
+    },
+    "images": [
+      "D:/Future/새 폴더/스크린샷 2026-07-08 171004.png"
+    ],
+    "interval": 0,
+    "random": false
+  },
+  "editor.minimap.enabled": false
+}
