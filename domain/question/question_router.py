@@ -10,7 +10,7 @@ router = APIRouter(
 )
 
 @router.get("/list", response_model=question_schema.QuestionList)
-# question_list 함수에 페이지 번호와 페이지에 보여줄 게시물 갯수인 page, size 매개변수들 추가
+# question_list 함수에 페이지 번호와 한 페이지에 보여줄 게시물 갯수인 page, size 매개변수를 추가
 def question_list(db: Session = Depends(get_db), page: int = 0, size: int = 10):
     total, _question_list = question_crud.get_question_list(db, skip=page*size, limit=size)
     return {
