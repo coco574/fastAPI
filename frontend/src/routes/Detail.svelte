@@ -2,8 +2,8 @@
     import fastapi from "../lib/api"
     import Error from "../components/Error.svelte"
     import { push } from "svelte-spa-router"
-    import moment from "moment/min/moment-with-locales"
-    moment.locale('ko')
+    import moment from 'moment/min/moment-with-locales' 
+    moment.locale('ko')    
 
     export let params = {}
     //Detail 컴포넌트를 호출할때 전달한 파라미터 값을 읽으려면 다음과 같이 params 변수를 선언
@@ -51,7 +51,7 @@
             </div>
         </div>
     </div>
-    <button class="btn btn-secondary" on:click="{() => {
+    <button class="btn btn-secondary" on:click="{() => { 
         push('/')
     }}">목록으로</button>
 
@@ -78,6 +78,3 @@
         <input type="submit" value="답변 등록" class="btn btn-primary" on:click="{post_answer}" />
     </form>
 </div>
-
-<!-- 부트스트랩 class를 css정의 없이 사용 할 수 있는 이유 -->
- <!-- store 전역변수 -->
